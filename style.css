@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Oxygen:wght@400;700&family=Qwitcher+Grypen:wght@700&display=swap');
+
+body{
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Qwitcher Grypen', cursive;
+    margin: 0;
+    background-color: black;
+    height: auto;
+    color: white;
+}
+
+
+
+main{
+    max-width: 900px;
+    /* top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; */
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(48, 46, 46, 0.819),-30px 0px 40px rgba(48, 46, 46, 0.819);
+}
+
+h1{
+    font-weight: 400;
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+#header{
+    /* border: 2px greenyellow solid; */
+    padding: 1.5%;
+    text-align: center;
+    height: auto;
+}
+
+#header-content{
+    width: 100%;
+    height: auto;
+    /* background-color: rgb(70, 67, 67); */
+    border: 2px rgb(70, 67, 67) dashed;
+    border-radius: 10px;
+    padding: 2rem 0;
+}
+
+p{
+    font-size: 2rem;
+}
+
+a{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+#landing{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+#landing_text{
+    display: flex;
+    flex: 0 1 40vw; /*grow shrink basis*/
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: black;
+}
+
+#landing_text h2{
+    color: whitesmoke;
+}
+
+.tooltip{
+    border: 1px solid rgb(135, 251, 40);
+    /* color: black; */
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin: 2rem 0;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+.tooltip:hover{
+    background-color: rgb(35, 233, 35);
+    color: black;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 340px;
+  background-color: #555;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  right: 50%;
+  margin-right: -170px;
+
+  /* Fade in tooltip */
+  opacity: 50%;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 48%;
+  margin-right: 5px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#landing_image{
+    background: url(https://images.unsplash.com/photo-1549366021-9f761d450615?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=406&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.caption{
+    /* border: 2px red solid; */
+    min-height: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/* .swiper{
+    max-width: 1120px;
+    width: 100%;
+    background-color: grey;
+    padding: 50px;
+} */
+
+/* .cards{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+} */
+
+/* .cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: auto;
+    height: auto;
+    border: 2px lightblue solid;
+} */
+
+/* .cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 0%;
+    border: 2px lightblue solid;
+} */
+
+/* .card{
+     border: 2px lightblue solid; 
+    padding: 15px 15px;
+    background-size: cover;
+    background-position: center;
+} */
+
+
+/* .card a img{
+    width: 100%;
+    border-radius: 15px;
+} */
+
+img{
+  /* border: 2px white solid; */
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform .2s;
+}
+
+/* .card a img{
+    width: 20%;
+    border-radius: 10px;
+} */
+
+.thumbnail{
+  width: auto;
+  border: 2px lightblue solid;
+}
+
+.thumbnail .thumbnail-slider .box{
+  /* margin: 1rem 0; */
+  position: relative;
+  overflow: hidden;
+  border:var(--border);
+  /* text-align: center; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 0%;
+  /* border: 2px lightblue solid; */
+}
+
+/* .thumbnail .thumbnail-slider .box:hover{
+  border:var(--border-hover);
+} */
+
+.thumbnail .thumbnail-slider .box .card{
+  padding:1rem;
+  padding: 10px 10px;
+  background-size: cover;
+  background-position: center;
+  /* background: linear-gradient(15deg, #eee 30%, #fff 30.1%); */
+}
+/* 
+.thumbnail .thumbnail-slider .box:hover .card{
+  transform: scale(1.5); 
+} */
+
+.thumbnail .thumbnail-slider .box .card img{
+  height: 8rem;
+  width: auto;
+  border-radius: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  border:var(--border-hover);
+  height:4rem;
+  width:4rem;
+  color:var(--black);
+  /* background: #fff; */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  font-size: 2rem;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+  background: var(--black);
+  color:#fff;
+}
+
+/* .swiper-navBtn{
+    color: #8eed69;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover{
+    color: #8eed69;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after{
+    font-size: 35px;
+  }
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  } */
+
+
+footer {
+    text-align: center;
+    /* padding: 0.5rem 0.5rem; */
+    margin: 2rem;
+    color: grey;
+    line-height: 80%;
+  }
+  
+  footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+  
+  /* Screen Sizes 500px and Up */
+  @media (min-width: 500px) {
+    #landing {
+      display: flex;
+      height: 100%;
+    }
+  
+    #landing-text {
+      height: 100vh;
+    }
+  
+    #landing-image {
+      height: 100vh;
+    }
+  
+    #our-work{
+      height: 100vh;
+      /* background: #fff; */
+    }
+  }
+  
+  /* Screen Sizes 700px and Up */
+  @media (min-width: 700px) {
+    .btn {
+      padding: 1rem 3rem;
+    }
+  }
